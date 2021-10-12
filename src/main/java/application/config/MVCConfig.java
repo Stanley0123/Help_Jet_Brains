@@ -10,7 +10,7 @@ public class MVCConfig implements WebMvcConfigurer {
     @Override
     public void configureViewResolvers(ViewResolverRegistry registry) {
         InternalResourceViewResolver viewResolver = new InternalResourceViewResolver();
-        viewResolver.setPrefix("/WEB-INF/resources/views/");
+        viewResolver.setPrefix("//");
         viewResolver.setSuffix("*.jsp");
         registry.viewResolver(viewResolver);
     }
